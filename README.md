@@ -28,7 +28,7 @@ Live Example: https://myanimelist.net/animelist/Bento-Box
     ```
 4. Then run:
     ```
-    npx scss --watch style/animelist.scss animelist.css
+    npx sass --watch style/animelist.scss animelist.css
     ```
 5. Now when you make a change inside the `style` folder and save, the `animelist.css` file will be updated with your changes
 
