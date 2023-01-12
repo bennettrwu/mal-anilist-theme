@@ -1,0 +1,45 @@
+@use './constants.scss' as c;
+
+footer {
+	text-align: center;
+	order: 10;
+	width: 100% !important;
+
+	div {
+		width: 100% !important;
+	}
+}
+
+#footer-block {
+	margin-top: 100px !important;
+	padding: 10px !important;
+	background-color: c.$bg-color2;
+	color: c.$text-color1;
+	border-radius: c.$border-radius;
+	font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+#copyright {
+	font-size: 12px;
+	color: #9caed9;
+	padding-top: 3px;
+	text-align: center;
+}
+
+#recaptcha-terms {
+	font-size: 10px;
+	margin-top: 20px !important;
+	color: #9caed9;
+}
+
+#recaptcha-terms a {
+	color: #9caed9;
+}
+
+#recaptcha-terms a:hover {
+	color: #e5eaf5;
+}
+
+.grecaptcha-badge {
+	visibility: hidden;
+}

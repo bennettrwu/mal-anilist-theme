@@ -1,0 +1,37 @@
+@use './constants.scss'as c;
+
+#advanced-options {
+	position: absolute !important;
+	top: c.$top-margin !important;
+	left: calc(50% - 400px) !important;
+	width: 800px !important;
+	background-color: c.$bg-color2 !important;
+	border-radius: c.$border-radius !important;
+	padding: 20px !important;
+
+	input,
+	select {
+		padding: 0.5em !important;
+		border-radius: c.$border-radius !important;
+		background-color: c.$bg-color1 !important;
+	}
+
+	* {
+		color: c.$text-color1;
+	}
+}
+
+.filter {
+	margin: 0px;
+	width: 100%;
+}
+
+.filter-widget, .sort-widget {
+	margin: 10px !important;
+}
+
+.sort-widget {
+	i {
+		filter: invert(1);
+	}
+}

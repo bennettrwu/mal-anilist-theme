@@ -1,0 +1,19 @@
+@use '../constants.scss'as c;
+
+.mal-modal {
+  display: flex !important;
+  justify-items: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  justify-content: center !important;
+}
+
+.mal-modal-content {
+  padding: 10px !important;
+}
+
+.mal-modal-content a {
+  padding: 5px !important;
+  background-color: c.$accent-color2 !important;
+  margin: 10px 10px 10px 0px !important;
+}

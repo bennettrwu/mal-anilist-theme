@@ -1,0 +1,83 @@
+@use './original.scss';
+
+@use './scrollbar.scss';
+@use './list/list.scss';
+@use './side_menu/side_menu.scss';
+@use './popups/popups.scss';
+@use './filter_menu.scss';
+@use './footer.scss';
+@use './constants.scss'as c;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	order: 10;
+}
+
+body {
+	cursor: c.$cursor-image c.$cursor-x-pos c.$cursor-y-pos, default;
+	font-family: 'Nunito', sans-serif !important;
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+	justify-content: flex-start !important;
+	align-content: flex-start !important;
+	height: 100vh !important;
+	width: 100% !important;
+	min-width: c.$min-body-width !important;
+	overflow-y: scroll !important;
+	background-color: c.$bg-color1 !important;
+	background-image: none !important;
+	padding: 70px c.$side-margins !important;
+	margin: 0px !important;
+	text-align: left !important;
+	
+	* {
+		font-size: 12px !important;
+	}
+}
+
+$bg-image-display-width: calc(c.$menu-width + 300px);
+$bg-image-display-height: calc($bg-image-display-width / c.$og-bg-width-scale * c.$og-bg-height-scale);
+
+body::after {
+	z-index: -1;
+	position: fixed;
+	display: block !important;
+	content: "";
+	background-size: cover;
+	width: $bg-image-display-width !important;
+	height: $bg-image-display-height !important;
+	background-image: c.$background-image;
+	filter: brightness(c.$bg-image-brightness);
+	bottom: 0px;
+	left: 0px;
+}
+
+a {
+	cursor: c.$cursor-link-image c.$cursor-x-pos c.$cursor-y-pos, pointer !important;
+	color: c.$text-color1;
+	text-decoration: none;
+
+	&:hover {
+		color: c.$text-color2;
+		text-decoration: underline;
+	}
+}
+
+.modal-wrapper {
+	width: 100% !important;
+	margin: auto !important;
+	padding: 20px !important;
+
+	* {
+		color: #000000 !important;
+	}
+}

@@ -1,0 +1,139 @@
+@use '../constants.scss'as c;
+
+.header {
+	position: inherit;
+	flex-basis: auto;
+	flex-grow: 0;
+	flex-shrink: 0;
+	height: c.$menu-header-height;
+	width: c.$menu-width;
+	order: 1;
+
+	* {
+		color: c.$text-color1 !important;
+		font-size: 16px !important;
+	}
+}
+
+.header-menu {
+	position: inherit !important;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header.header-title {
+	display: none !important;
+}
+
+.header-menu::before {
+	background-image: c.$profile-image;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 80px;
+	display: block;
+	height: 80px;
+	content: "";
+	flex-grow: 0;
+	flex-shrink: 0;
+	border-radius: c.$border-radius;
+}
+
+.btn-menu {
+	text-align: left !important;
+	font-size: 18px !important;
+	margin: 10px !important;
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: calc(100% - 20px - c.$menu-header-height);
+}
+
+.header-info {
+	width: c.$menu-width;
+	flex-shrink: 0;
+}
+
+#header-menu-button {
+	pointer-events: none !important;
+
+	i {
+		display: none !important;
+	}
+}
+
+.list-menu-float {
+	position: inherit;
+	width: c.$menu-width;
+	order: 1;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: -1 * c.$menu-width !important;
+	margin-top: c.$menu-header-height + 10px !important;
+	height: c.$list-menu-height - 10px !important;
+}
+
+
+.icon-menu,
+form {
+	order: 3 !important;
+	border-radius: c.$border-radius;
+}
+
+.profile {
+	display: none !important;
+}
+
+.icon {
+	filter: invert(1);
+	position: inherit !important;
+	left: 0px !important;
+	top: 0px !important;
+}
+
+.icon-menu:not(.profile) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: c.$list-menu-height - 10px !important;
+	height: c.$list-menu-height - 10px !important;
+	background-color: transparent !important;
+	transition: none !important;
+}
+
+.icon-menu:not(.profile):hover {
+	background-color: invert(rgb(41, 57, 74, 0.8)) !important;
+	filter: invert(1);
+}
+
+.icon-menu:not(.setting) .text {
+	display: none !important;
+}
+
+.list-menu-float>form .text {
+	display: none !important;
+}
+
+.icon-logout {
+	width: 21px !important;
+	height: 24px !important;
+}
+
+.setting span {
+	border-radius: c.$border-radius;
+}
+
+.link-list-setting,
+.link-style-setting {
+	width: 100% !important;
+	background-color: invert(c.$accent-color1) !important;
+	color: invert(c.$text-color1) !important;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.link-list-setting:hover,
+.link-style-setting:hover {
+	background-color: invert(c.$accent-color2) !important;
+}

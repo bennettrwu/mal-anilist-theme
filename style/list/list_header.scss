@@ -1,0 +1,81 @@
+@use '../constants.scss' as c;
+
+#list-container {
+	position: inherit !important;
+	width: calc(100% - c.$menu-width) !important;
+	min-height: 100vh !important;
+	flex-grow: 0 !important;
+	flex-shrink: 0 !important;
+	display: flex;
+	order: 2;
+	background-color: transparent !important;
+}
+
+.list-block {
+	margin: 10px !important;
+	width: calc(100% - 20px) !important;
+	flex-grow: 0 !important;
+	flex-shrink: 0 !important;
+	background-color: c.$bg-color2  !important;
+	border-radius: c.$border-radius  !important;
+
+	*:not(.status) {
+		background-color: transparent !important;
+	}
+}
+
+.list-unit {
+	width: 100% !important;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.list-status-title,
+.list-stats {
+	position: relative;
+	left: 0px;
+	right: 0px;
+	text-align: center !important;
+	width: 100% !important;
+
+	span {
+		font-size: 20px !important;
+	}
+
+	.text {
+		width: 100% !important;
+	}
+}
+
+.header-title.status {
+	background-color: transparent !important;
+}
+
+.header-title.title {
+	width: 275px !important;
+}
+
+.header-title.score {
+	width: 50px !important;
+}
+
+.header-title.type {
+	width: 50px !important;
+}
+
+.header-title.progress {
+	width: 100px !important;
+}
+
+.header-title.tags {
+	width: 125px !important;
+}
+
+.list-stats {
+	font-size: 16px !important;
+}
+
+.list-stats span {
+	height: 100% !important;
+	font-size: 16px !important;
+}

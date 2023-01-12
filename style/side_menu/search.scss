@@ -1,0 +1,49 @@
+@use '../constants.scss'as c;
+
+.search-container {
+	position: inherit !important;
+}
+
+#search-box {
+	position: relative;
+	display: block !important;
+	width: 100% !important;
+	height: fit-content !important;
+	margin: 10px 0px !important;
+
+	input {
+		font-size: 16px;
+		padding: 0.5em !important;
+		height: 2.5em !important;
+		background-color: rgb(41, 57, 74, 0.8) !important;
+		color: c.$text-color1 !important;
+		border: none !important;
+		outline: none !important;
+		border-radius: c.$border-radius;
+	}
+
+	input:focus {
+		background-color: rgb(41, 57, 74, 0.9) !important;
+	}
+}
+
+#search-box:focus-within::after {
+	display: none !important;
+}
+
+#search-box::after {
+	display: block;
+	width: 100%;
+	color: c.$text-color1 !important;
+	content: "Search";
+	height: 2em;
+	position: absolute;
+	font-size: 16px !important;
+	top: 0.4em;
+	left: 0.5em;
+	pointer-events: none;
+}
+
+#search-button {
+	display: none !important;
+}

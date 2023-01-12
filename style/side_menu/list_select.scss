@@ -1,0 +1,51 @@
+@use '../constants.scss'as c;
+
+#status-menu,
+#status-menu.fixed {
+	position: inherit;
+	margin-top: c.$list-menu-height + c.$menu-header-height + 10px !important;
+	margin-left: calc(-1 * c.$menu-width) !important;
+	width: c.$menu-width;
+	background-color: c.$bg-color1 !important;
+}
+
+#status-menu {
+	background-color: transparent !important;
+}
+
+.status-menu {
+	width: c.$menu-width;
+	display: flex !important;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	* {
+		color: c.$text-color1 !important;
+		font-family: 'Nunito', sans-serif !important;
+	}
+
+	a {
+		font-weight: 400;
+		border-radius: c.$border-radius !important;
+		width: 100%;
+		text-align: left !important;
+		padding: 10px !important;
+		font-size: 16px !important;
+		border: 0px !important;
+		margin: 2px 0px !important;
+		text-shadow: 1px 1px #000000 !important;
+	}
+
+	a:hover {
+		text-decoration: none;
+		background-color: rgb(41, 57, 74, 0.8) !important
+	}
+
+	a::after {
+		display: none !important;
+	}
+}
+
+.on {
+	background-color: rgb(41, 57, 74, 0.9) !important;
+}

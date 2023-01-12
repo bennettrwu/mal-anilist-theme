@@ -1,0 +1,94 @@
+@use '../constants.scss'as c;
+
+.list-table {
+	border-collapse: separate !important;
+	border-spacing: 5px 15px !important;
+	flex-grow: 0 !important;
+	flex-shrink: 0 !important;
+	width: 100% !important;
+	table-layout: fixed;
+	display: table !important;
+
+	* {
+		color: c.$text-color1 !important;
+	}
+}
+
+.list-item {}
+
+.data.status {
+	border-radius: c.$border-radius !important;
+	margin: 10px !important;
+}
+
+.header-title.image {
+	width: c.$image-width !important;
+}
+
+.data.image img {
+	border-radius: c.$border-radius !important;
+	width: c.$image-width !important;
+	height: calc(c.$image-width / 48 * 68) !important;
+}
+
+.data.score span {
+	font-size: 20px !important;
+}
+
+.data.score select {
+	border-radius: c.$border-radius !important;
+	padding: 2px !important;
+	font-size: 20px !important;
+	background-color: c.$bg-color1 !important;
+	color: c.$text-color1 !important;
+}
+
+.data.progress div {
+	display: flex !important;
+	height: 100% !important;
+	align-items: center !important;
+	align-content: center !important;
+	justify-content: center !important;
+	justify-items: center !important;
+}
+
+.data.progress i {
+	margin-left: 5px !important;
+	font-size: 20px !important;
+}
+
+.data.chapter div {
+	display: flex !important;
+	height: 100% !important;
+	align-items: center !important;
+	align-content: center !important;
+	justify-content: center !important;
+	justify-items: center !important;
+}
+
+.data.chapter i {
+	margin-left: 5px !important;
+	font-size: 20px !important;
+}
+
+.data.volume div {
+	display: flex !important;
+	height: 100% !important;
+	align-items: center !important;
+	align-content: center !important;
+	justify-content: center !important;
+	justify-items: center !important;
+}
+
+.data.volume i {
+	margin-left: 5px !important;
+	font-size: 20px !important;
+}
+.data.tags textarea {
+	width: 100% !important;
+}
+
+.more-content {
+	display: block !important;
+	width: c.$more-info-width !important;
+}

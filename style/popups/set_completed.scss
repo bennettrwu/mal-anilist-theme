@@ -1,0 +1,27 @@
+@use '../constants.scss'as c;
+
+#fancybox-confirm-yes-button {
+  border-radius: c.$border-radius !important;
+  color: c.$text-color1 !important;
+  font-size: 16 !important;
+  padding: 5px !important;
+  background-color: c.$accent-color2 !important;
+  margin: 10px 10px 10px 0px !important;
+}
+
+#fancybox-confirm-yes-button:hover {
+  background-color: c.$accent-color1 !important;
+}
+
+#fancybox-confirm-no-button {
+  border-radius: c.$border-radius !important;
+  color: c.$text-color1 !important;
+  font-size: 16 !important;
+  padding: 5px !important;
+  background-color: c.$accent-color2 !important;
+  margin: 10px 10px 10px 0px !important;
+}
+
+#fancybox-confirm-no-button:hover {
+  background-color: c.$accent-color1 !important;
+}
