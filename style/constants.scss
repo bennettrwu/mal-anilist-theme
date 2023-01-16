@@ -1,22 +1,25 @@
-$top-margin: 5vh;												// Margin size on top
-$side-margins: 10vw;												// Margin size on the sides
+// Note: HTML font-size is set to 6.25%
+
+$top-margin: 5vh;												    // Margin size on top
+$side-margins: 10vw;												  // Margin size on the sides
 $menu-width: 400px;												// Width of the side menu
-$menu-header-height: 80px;										// Height of the header of the side menu (profile + Viewing x's anime list)
+$menu-header-height: 80px;									// Height of the header of the side menu (profile + Viewing x's anime list)
 $list-menu-height: 60px;										// Height of menu buttons (add to list, anime list, mangalist, history etc icons)
-$max-list-width: 1000px;
 $min-body-width: 1500px;										// Min display width of the entire page
-$border-radius: 4px;											// How much to curve corners
-$image-width: 63px;												// How wide the anime images should be
+$border-radius: 3px;											  // How much to curve corners
+$image-width: 3vw;												  // How wide the anime images should be
 $more-info-width: 800px;										// How wide the more info div should be
 $profile-image: url("https://cdn.myanimelist.net/images/userimages/7529371.webp");						// Profile image url
 $background-image: url("https://dl.dropboxusercontent.com/s/ap53hduayl3uhh4/mal_background.png");		// Background image url
-$og-bg-width-scale: 1;											// $og-bg-width-scale/$og-bg-height-scale = ratio between background image width and height
-$og-bg-height-scale: 1;
-$bg-image-brightness: 0.8;										// How bright to make the background image (to help readability)
-$cursor-image: url("https://dl.dropboxusercontent.com/s/6zbnk38mjv1gb28/cursor.png");					// cursor png
-$cursor-link-image: url("https://dl.dropboxusercontent.com/s/ks54n9cbqteot7l/cursor-link.png");			// cursor png for links
-$cursor-x-pos: 0;												// cursor x position
-$cursor-y-pos: 16;												// cursor y position
+$background-image-width: 2000;              // Width and height of background image file
+$background-image-height: 2000;
+$bg-image-display-width: calc($menu-width + $side-margins + 100px);
+$bg-image-display-height: calc($bg-image-display-width * calc($background-image-height / $background-image-width));
+$bg-image-brightness: 0.8;									// How bright to make the background image (to help readability)
+$cursor-image: url("https://dl.dropboxusercontent.com/s/6zbnk38mjv1gb28/cursor.png");					      // cursor png
+$cursor-link-image: url("https://dl.dropboxusercontent.com/s/ks54n9cbqteot7l/cursor-link.png");			// cursor png on link hover
+$cursor-x-pos: 0;												    // cursor x position
+$cursor-y-pos: 16;												  // cursor y position
 // Theme Colors
 $bg-color1: #1D2733;
 $bg-color2: #29394A;

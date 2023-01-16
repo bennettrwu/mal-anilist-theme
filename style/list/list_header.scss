@@ -16,8 +16,9 @@
 	width: calc(100% - 20px) !important;
 	flex-grow: 0 !important;
 	flex-shrink: 0 !important;
-	background-color: c.$bg-color2  !important;
-	border-radius: c.$border-radius  !important;
+	background-color: c.$bg-color2 !important;
+	border-radius: c.$border-radius !important;
+	padding: 0px 5px !important;
 
 	*:not(.status) {
 		background-color: transparent !important;
@@ -51,24 +52,43 @@
 	background-color: transparent !important;
 }
 
-.header-title.title {
-	width: 275px !important;
+.status {
+	width: 5px !important;
+	border-radius: c.$border-radius !important;
 }
 
-.header-title.score {
+tr {
+	position: relative !important;
+}
+
+.number {
 	width: 50px !important;
 }
 
-.header-title.type {
-	width: 50px !important;
+.image {
+	width: calc(c.$image-width + 20px) !important;
+	min-width: calc(48px + 20px) !important;
+	min-height: 68px !important;
 }
 
-.header-title.progress {
-	width: 100px !important;
+.title {
+	width: 80% !important;
 }
 
-.header-title.tags {
-	width: 125px !important;
+.score {
+	max-width: 50px !important;
+}
+
+.type {
+	max-width: 50px !important;
+}
+
+.progress {
+	max-width: 100px !important;
+}
+
+.tags {
+	width: 20% !important;
 }
 
 .list-stats {

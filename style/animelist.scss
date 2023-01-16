@@ -11,6 +11,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+html {
+	min-width: calc(c.$min-body-width + c.$side-margins) !important;
+}
+
 *,
 *::before,
 *::after {
@@ -44,17 +48,16 @@ body {
 	}
 }
 
-$bg-image-display-width: calc(c.$menu-width + 300px);
-$bg-image-display-height: calc($bg-image-display-width / c.$og-bg-width-scale * c.$og-bg-height-scale);
-
 body::after {
 	z-index: -1;
 	position: fixed;
 	display: block !important;
 	content: "";
 	background-size: cover;
-	width: $bg-image-display-width !important;
-	height: $bg-image-display-height !important;
+	width: c.$bg-image-display-width !important;
+	height: c.$bg-image-display-height !important;
+	max-height: 100vh !important;
+	max-width: calc(100vh * (c.$background-image-width / c.$background-image-height)) !important;
 	background-image: c.$background-image;
 	filter: brightness(c.$bg-image-brightness);
 	bottom: 0px;

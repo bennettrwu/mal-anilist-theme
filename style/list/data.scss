@@ -1,4 +1,4 @@
-@use '../constants.scss'as c;
+@use '../constants.scss' as c;
 
 .list-table {
 	border-collapse: separate !important;
@@ -6,7 +6,7 @@
 	flex-grow: 0 !important;
 	flex-shrink: 0 !important;
 	width: 100% !important;
-	table-layout: fixed;
+	table-layout: fixed !important;
 	display: table !important;
 
 	* {
@@ -14,21 +14,17 @@
 	}
 }
 
-.list-item {}
-
-.data.status {
-	border-radius: c.$border-radius !important;
-	margin: 10px !important;
-}
-
-.header-title.image {
-	width: c.$image-width !important;
+.list-item {
+	table-layout: fixed !important;
+	width: 100% !important;
 }
 
 .data.image img {
 	border-radius: c.$border-radius !important;
 	width: c.$image-width !important;
-	height: calc(c.$image-width / 48 * 68) !important;
+	height: calc(100% / 48 * 68) !important;
+	min-width: 48px !important;
+	min-height: 68px !important;
 }
 
 .data.score span {
@@ -84,6 +80,7 @@
 	margin-left: 5px !important;
 	font-size: 20px !important;
 }
+
 .data.tags textarea {
 	width: 100% !important;
 }
