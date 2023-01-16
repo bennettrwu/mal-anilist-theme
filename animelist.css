@@ -1493,8 +1493,8 @@ form {
   height: 24px !important;
 }
 
-.setting span {
-  border-radius: 3px;
+.link-list-setting:hover {
+  border-top-left-radius: 0px !important;
 }
 
 .link-list-setting,
@@ -1509,6 +1509,15 @@ form {
 .link-list-setting:hover,
 .link-style-setting:hover {
   background-color: #b99d80 !important;
+}
+
+.icon-menu.setting {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.icon-menu.setting span {
+  border-radius: 3px !important;
+  border-top-left-radius: 0px !important;
 }
 
 #status-menu,

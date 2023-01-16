@@ -74,7 +74,6 @@
 	height: c.$list-menu-height - 10px !important;
 }
 
-
 .icon-menu,
 form {
 	order: 3 !important;
@@ -120,8 +119,8 @@ form {
 	height: 24px !important;
 }
 
-.setting span {
-	border-radius: c.$border-radius;
+.link-list-setting:hover {
+	border-top-left-radius: 0px !important;
 }
 
 .link-list-setting,
@@ -136,4 +135,14 @@ form {
 .link-list-setting:hover,
 .link-style-setting:hover {
 	background-color: invert(c.$accent-color2) !important;
+}
+
+.icon-menu.setting {
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+
+	span {
+		border-radius: c.$border-radius !important;
+		border-top-left-radius: 0px !important;
+	}
 }
