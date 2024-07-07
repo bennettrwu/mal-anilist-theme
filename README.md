@@ -10,16 +10,16 @@ Live Example: https://myanimelist.net/animelist/Bento-Box
 
 - SASS
 
-# Getting Started
+## Getting Started
 
-## Installing the Theme
+### Installing the Theme
 1. Login to MyAnimeList
 2. Head to https://myanimelist.net/ownlist/style
 3. Select Animelist and/or Mangalist under "Default Theme" under Modern List Design
 4. Then click the default theme image to go to the style editor
 5. Copy-paste the text inside `animelist.css` into the box under "Add Custom CSS" 
 
-## Customizing the Theme
+### Customizing the Theme
 1. Install NodeJS
 2. Clone the repository to your computer
 3. In the diretory of the repository you just cloned, run:
