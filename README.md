@@ -2,7 +2,7 @@
 
 ## About
 
-A Custom CSS Theme for MyAnimeList. 
+A custom CSS theme for MyAnimeList. 
 
 Live Example: https://myanimelist.net/animelist/Bento-Box
 
