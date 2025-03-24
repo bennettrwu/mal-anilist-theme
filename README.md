@@ -1,8 +1,8 @@
-# Custom MAL CSS
+# MAL Anilist Theme
 
 ## About
 
-A custom CSS theme for MyAnimeList. 
+A custom CSS theme for MyAnimeList inspired by AniList. 
 
 Live Example: https://myanimelist.net/animelist/Bento-Box
 
